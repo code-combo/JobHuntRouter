@@ -5,7 +5,7 @@ export default function RootLayout() {
     <div className='root-layout'>
         <header>
             <nav>
-              <h1>jobarouter</h1>
+              <h1>JobHuntRouter</h1>
               <NavLink to = "/">Home</NavLink>
               <NavLink to = "/about">About</NavLink>
               <NavLink to = "/help">Help</NavLink>
