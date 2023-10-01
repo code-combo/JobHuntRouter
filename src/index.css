@@ -173,6 +173,10 @@ label {
 }
 
 /* careers list */
+.careers-layout {
+  width: 100%;
+}
+
 .careers > a {
   display: block;
   background: rgba(0,0,0,0.2);
