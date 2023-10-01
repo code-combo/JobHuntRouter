@@ -1,14 +1,17 @@
 import {createBrowserRouter, createRoutesFromElements,  NavLink, Route, RouterProvider} from "react-router-dom"
 
-// Pages
-import RootLayout from "./layouts/RootLayout"
-import About from "./pages/About"
-import Home from "./pages/Home"
 // styles
 import './App.css'
 import HelpLayout from "./layouts/HelpLayout"
 import Faq from "./pages/help/Faq"
 import Contact from "./pages/help/Contact"
+
+// Pages
+import RootLayout from "./layouts/RootLayout"
+import About from "./pages/About"
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound"
+
 
 // Routes
 const router = createBrowserRouter(
@@ -20,6 +23,8 @@ const router = createBrowserRouter(
         <Route path = "faq" element = {<Faq/>}/>
         <Route path = "contact" element = {<Contact/>}/>
       </Route>
+
+      <Route path="*" element = {<NotFound/>}/>
     </Route>
   )
 )
@@ -27,11 +32,7 @@ const router = createBrowserRouter(
 function App() {
 
   return (
-    // <>
-    // <h1>hey there!</h1>
-    // </>
     <RouterProvider router = {router}/>
-
   )
 }
 
